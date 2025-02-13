@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Connectwork</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function login() {
+            var userID = document.getElementById("userID").value;
+            var password = document.getElementById("password").value;
+            
+            if (userID === "VITPUNE" && password === "VITPUNE") {
+                window.location.href = "dashboard.html"; // Redirect to dashboard
+            } else {
+                alert("Invalid User ID or Password. Try again!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Connectwork</h2>
+        <form onsubmit="event.preventDefault(); login();">
+            <label for="userID">User ID</label>
+            <input type="text" id="userID" placeholder="Enter your User ID" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your Password" required>
+            
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+</body>
+</html>

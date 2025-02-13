@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #0800a1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('background.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(30, 0, 181);
+    padding: 100px 20px;
+}
+
+.btn {
+    background-color: blue;
+    color: rgb(197, 7, 7);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero {
+    background-image: url('background.jpg'); /* Make sure the image is in the same folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255); /* Change text color for visibility */
+    text-align: center;
+    padding: 100px 20px;
+}
+.organizers {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff; /* Light background color */
+}
+
+.organizer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.organizer-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.organizer-container img:hover {
+    transform: scale(1.1);
+}
+.scroll-down {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top: 20px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+/* Login Page Styles */
+/* Login Page Styles */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+.back-home {
+    display: block;
+    margin-top: 15px;
+    color: blue;
+    text-decoration: none;
+}
+.back-home:hover {
+    text-decoration: underline;
+}
+/* Dashboard Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Beautiful gradient */
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.dashboard-container {
+    text-align: center;
+    margin: 30px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.dashboard-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.dashboard-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.dashboard-item:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.support-btn {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.support-btn:hover {
+    background-color: darkred;
+}
+.organizers {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white; /* Set white background */
+    color: black; /* Ensure text is visible */
+}
